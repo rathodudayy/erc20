@@ -376,7 +376,7 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
 
 
 contract ProjectSenpai is ERC20 {
-    constructor () public ERC20("ProjectSenpai", "SENPAI") {
+    constructor () public ERC20("TOKEN NAME", "TOKEN Symbol") {
         _mint(msg.sender, 1000000 * (10 ** uint256(decimals())));
     }
 }
